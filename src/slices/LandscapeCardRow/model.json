@@ -1,0 +1,115 @@
+{
+  "id": "landscape_card",
+  "type": "SharedSlice",
+  "name": "LandscapeCardRow",
+  "description": "LandscapeCard",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        }
+      },
+      "items": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "name": {
+          "type": "Text",
+          "config": {
+            "label": "Name",
+            "placeholder": ""
+          }
+        },
+        "link": {
+          "type": "Link",
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "select": null
+          }
+        }
+      }
+    },
+    {
+      "id": "episodeSelection",
+      "name": "Episode Selection",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        }
+      },
+      "items": {
+        "episode": {
+          "type": "Link",
+          "config": {
+            "label": "episode",
+            "select": "document",
+            "customtypes": [
+              "episode"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "eventSelection",
+      "name": "Event Selection",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        }
+      },
+      "items": {
+        "event": {
+          "type": "Link",
+          "config": {
+            "label": "Event",
+            "select": "document",
+            "customtypes": [
+              "event"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

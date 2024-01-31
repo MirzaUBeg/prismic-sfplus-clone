@@ -1,0 +1,126 @@
+{
+  "id": "navigation_menu",
+  "type": "SharedSlice",
+  "name": "NavigationMenu",
+  "description": "NavigationMenu",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "parenttext": {
+          "type": "Text",
+          "config": {
+            "label": "ParentText",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "childtext": {
+          "type": "Text",
+          "config": {
+            "label": "ChildText",
+            "placeholder": ""
+          }
+        },
+        "childlink": {
+          "type": "Link",
+          "config": {
+            "label": "ChildLink",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      }
+    },
+    {
+      "id": "singleItem",
+      "name": "Single Item",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "parenttext": {
+          "type": "Text",
+          "config": {
+            "label": "ParentText",
+            "placeholder": ""
+          }
+        },
+        "parentlink": {
+          "type": "Link",
+          "config": {
+            "label": "ParentLink",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "seriesListing",
+      "name": "SeriesListing",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "parenttext": {
+          "type": "Text",
+          "config": {
+            "label": "ParentText",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "series": {
+          "type": "Link",
+          "config": {
+            "label": "series",
+            "select": "document",
+            "customtypes": [
+              "series"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "eventListing",
+      "name": "EventListing",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "parenttext": {
+          "type": "Text",
+          "config": {
+            "label": "ParentText",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "event": {
+          "type": "Link",
+          "config": {
+            "label": "event",
+            "select": "document",
+            "customtypes": [
+              "event"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

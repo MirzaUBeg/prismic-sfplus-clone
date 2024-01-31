@@ -1,0 +1,69 @@
+{
+  "id": "globalnav",
+  "label": "GlobalNav",
+  "format": "custom",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "logo": {
+        "type": "Image",
+        "config": {
+          "label": "Logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "logotext": {
+        "type": "Image",
+        "config": {
+          "label": "LogoText",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "logotextlink": {
+        "type": "Link",
+        "config": {
+          "label": "LogoTextLink",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "seriesmenutitle": {
+        "type": "Text",
+        "config": {
+          "label": "SeriesMenuTitle",
+          "placeholder": ""
+        }
+      },
+      "serieslist": {
+        "type": "Group",
+        "config": {
+          "label": "SeriesList",
+          "fields": {
+            "series": {
+              "type": "Link",
+              "config": {
+                "label": "series",
+                "select": "document",
+                "customtypes": ["series"]
+              }
+            }
+          }
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "navigation_menu": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}
